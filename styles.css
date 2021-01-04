@@ -1,0 +1,186 @@
+html, body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* ---------text----------- */
+.title {
+  font-family: 'Norican', cursive;
+  font-size: 5rem;
+}
+
+.text {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------Container----------------- */
+.container-fluid {
+  margin: 0 auto;
+}
+
+/* -------TitleSection----------------- */
+.title-box {
+  background: url('images/background.jpg');
+  text-align: center;
+}
+
+.headline {
+  font-family: 'Norican', cursive;
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 12rem;
+  text-align: center;
+  border: 10px solid #ffffff;
+  padding: 5% 20%;
+}
+
+.nav-item {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0 30px;
+}
+
+.navbar-brand {
+  margin: 0 2rem !important;
+}
+
+.navigation {
+  transition: background 700ms;
+}
+
+.navigation-background {
+  background-color: #000000;
+}
+
+/* ---------DescriptionSection------------ */
+.description-box {
+  opacity: 0;
+  text-align: center;
+  padding: 7% 15%;
+  transform: translateY(150px);
+  transition: all 0.75s ease;
+}
+
+.description-title {
+  white-space: nowrap;
+}
+
+/* -----------MyWork--------------------- */
+.myWork-box {
+  background-color: black;
+  color: white;
+  padding: 5% 0;
+}
+
+.myWorkLeft {
+  opacity: 0;
+  padding-top: 25%;
+  transform: translateY(150px);
+  transition: all 0.75s ease;
+  display: inline-block;
+}
+
+.myWork-title {
+  padding-left: 3%;
+}
+
+.image {
+  width: auto;
+  height: 85vh;
+}
+
+/* ------------Contact-me---------- */
+.contact-box {
+  background: url('images/contact-background.jpg');
+}
+
+.contact-text {
+  padding: 20% 20%;
+  position: absolute;
+  left: 15%;
+}
+
+.contact-title {
+  color: white;
+}
+
+/* --------------Transitions---------- */
+.scrolling-text {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* --------------responsive----------------- */
+@media (max-width: 990px) {
+  .background-image {
+    height: 70vh;
+  }
+
+  .headline.centering {
+    font-size: 3rem;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centering {
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  .title {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .text {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 5%;
+  }
+
+  .picture-carousel {
+    padding: 10% 0;
+  }
+
+  .myWorkLeft {
+    padding: 0 0 10% 0;
+  }
+
+  .myWork-box {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-image {
+    height: 60vh;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+}

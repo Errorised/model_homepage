@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cadi's Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section class="top-container">
+    <div class="title-box background-image">
+      <nav class="navigation navbar navbar-expand-md navbar-dark fixed-top py-2">
+        <div class="brand mx-auto order-lg-1 order-md-1 order-sm-0">
+          <a class="navbar-brand" href="#">Cadi</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dualcollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse mx-auto dualcollapse order-lg-0 order-md-0 order-sm-1" id="collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="description-button" class="description-button nav-link" href="#description">Who am I?</a>
+            </li>
+            <li class="nav-item">
+              <a id="myWork-button" class="myWork-button nav-link" href="#myWork">My Work</a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse mx-auto dualcollapse order-lg-2 order-md-2" id="collapse2">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a id="contact-button" class="contact-button nav-link" href="#contact">Contact me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TestTest</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="headline-box">
+        <h1 class="headline centering">Cadis Page</h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="description" class="description">
+    <div class="description-box container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12 offset-lg-1 order-md-0">
+          <h2 class="title description-title centering">Who am I?</h2>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 offset-lg-1 order-md-1">
+          <p class="text description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="myWork" class="myWork h-100">
+    <div class="container-fluid myWork-box">
+      <div class="row justify-content-center">
+        <div class="picture-carousel col-lg-4 col-md-12 col-sm-12">
+          <div id="myWork-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="image" src="images/cadi1.jpeg" alt="cadi1">
+              </div>
+              <div class="carousel-item">
+                <img class="image" src="images/cadi3.jpeg" alt="cadi3">
+              </div>
+              <div class="carousel-item">
+                <img class="image" src="images/cadi4.jpeg" alt="cadi4">
+              </div>
+              <div class="carousel-item">
+                <img class="image" src="images/cadi5.jpeg" alt="cadi5">
+              </div>
+              <a class="carousel-control-prev" href="#myWork-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myWork-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 offset-lg-1 offset-sm-0">
+          <div class="myWorkLeft">
+            <h2 class="title myWork-title">My Work</h2>
+            <p class="text myWork-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-me">
+    <div id="contact" class="background-image contact-box container-fluid">
+      <div class="row">
+        <div class="col-6 contact-text">
+          <h2 class="title contact-title">Contact me</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" type="text/javascript">
+
+  </script>
+</body>
+
+</html>
