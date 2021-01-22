@@ -10,11 +10,25 @@ function textAnimation (scrollpoint, target, toggleClass) {
     $(target).removeClass(toggleClass);
 }
 
-$(document).scroll(function() {
-  textAnimation (90, ".navbar", "navigation-background");
-  textAnimation (300, ".description-box", "scrolling-text");
-  textAnimation (1100, ".myWorkLeft", "scrolling-text");
-});
+
+
+if ($(document).width() < 990 && $(document).width() > 576){
+  console.log("990")
+  $(document).scroll(function() {
+    textAnimation (20, ".navbar", "navigation-background");
+    textAnimation (300, ".description-box", "scrolling-text");
+    textAnimation (600, ".myWorkLeft", "scrolling-text");
+  });
+} else if ($(document).width() < 576 ) {
+  $(document).scroll(function() {
+    console.log("576");
+    textAnimation (50, ".navbar", "navigation-background");
+    textAnimation (0, ".description-box", "scrolling-text");
+    textAnimation (100, ".myWorkLeft", "scrolling-text");
+  });
+}
+
+
 
 
 // $(".nav-link").click(function(event){

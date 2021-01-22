@@ -173,7 +173,7 @@ html, body {
 
 @media (max-width: 576px) {
   .background-image {
-    height: 60vh;
+    height: 30vh;
   }
 
   .title {
