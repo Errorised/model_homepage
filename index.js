@@ -11,7 +11,6 @@ function textAnimation (scrollpoint, target, toggleClass) {
 }
 
 
-
 if ($(document).width() < 990 && $(document).width() > 576){
   console.log("990")
   $(document).scroll(function() {
@@ -20,10 +19,9 @@ if ($(document).width() < 990 && $(document).width() > 576){
     textAnimation (600, ".myWorkLeft", "scrolling-text");
   });
 } else if ($(document).width() < 576 ) {
+  $(".navbar").addClass("navigation-background")
+  $(".description-box").addClass("scrolling-text");
   $(document).scroll(function() {
-    console.log("576");
-    textAnimation (50, ".navbar", "navigation-background");
-    textAnimation (0, ".description-box", "scrolling-text");
     textAnimation (100, ".myWorkLeft", "scrolling-text");
   });
 }
